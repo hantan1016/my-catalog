@@ -1,0 +1,5 @@
+name: Zabbix server
+description: |
+  Runs Zabbix Server and Zabbix Web UI on a Container.
+version: 1.0.0
+category: Monitoring

@@ -1,0 +1,11 @@
+zabbix-agent:
+  image: monitoringartist/zabbix-agent-xxl-limited:latest
+  restart: always
+  hostname: ${agent_hostname}
+  ports:
+   - 10050:10050
+  environment:
+   - ZA_Server=${zabbix_serverip}
+   - ZA_ServerActive=${zabbix_serverip_active}
+  volumes:
+   - /:/rootfs

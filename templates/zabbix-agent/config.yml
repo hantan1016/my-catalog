@@ -1,0 +1,5 @@
+name: Zabbix agent
+description: |
+  Dockerized Zabbix agent with Docker monitoring out of the box for CoreOS, Debian, RHEL, Ubuntu, ....
+version: 1.0.0
+category: Monitoring
