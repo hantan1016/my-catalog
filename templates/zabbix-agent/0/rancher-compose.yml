@@ -8,19 +8,19 @@
   questions:
     - variable: "agent_hostname"
       description: "Zabbix agent hostname"
-      label: "Hostname:"
+      label: "Hostname"
       required: true
       default: "Zabbix agent"
       type: "string"
     - variable: "zabbix_serverip"
       description: "Zabbix server ip or DNS name"
-      label: "Zabbix ServerIP:"
+      label: "Zabbix ServerIP"
       required: true
       default: "127.0.0.1"
       type: "string"
     - variable: "zabbix_serverip_active"
       description: "Zabbix server ip to active mode"
-      label: "Zabbix ServerIP Active:"
+      label: "Zabbix ServerIP Active"
       required: true
       default: "127.0.0.1"
       type: "string"
