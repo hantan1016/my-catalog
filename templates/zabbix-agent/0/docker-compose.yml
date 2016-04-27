@@ -7,6 +7,5 @@ zabbix-agent:
   environment:
    - ZA_Server=${zabbix_serverip}
    - ZA_ServerActive=${zabbix_serverip_active}
-   - ZA_AllowRoot=1
   volumes:
    - /:/rootfs
