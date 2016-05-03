@@ -6,3 +6,5 @@ zabbix-server:
    - 10052:10052
    - 2812:2812
    - 8082:80
+  volumes:
+   - /etc/localtime:/etc/localtime:ro

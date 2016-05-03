@@ -11,3 +11,4 @@ zabbix-agent:
    - ZA_ServerActive=${zabbix_serverip_active}
   volumes:
    - /:/rootfs
+   - /etc/localtime:/etc/localtime:ro
