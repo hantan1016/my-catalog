@@ -1,0 +1,12 @@
+logspout:
+  restart: always
+  environment:
+    LOGSPOUT: 'ignore'
+  volumes:
+  - '/var/run/docker.sock:/var/run/docker.sock'
+  command: ${route_uri}
+  labels:
+    io.rancher.scheduler.global: 'true'
+  tty: true
+  image: gliderlabs/logspout
+  stdin_open: true
