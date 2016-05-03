@@ -1,0 +1,24 @@
+.catalog:
+  name: elk
+  version: 1.0.0
+  description: |
+    Collect, search and visualise log data with ELK (Elasticsearch 2.3.2, Logstash 2.3.2, Kibana 4.5.0).
+  minimum_rancher_version: v0.56.0
+  uuid: elk-0
+  questions:
+    - variable: "hostlabel_key"
+      description: "the key of host labels."
+      label: "Key"
+      required: true
+      type: "string"
+    - variable: "hostlabel_value"
+      description: "the value of host labels"
+      label: "Value"
+      required: true
+      type: "string"
+    - variable: "logstash_conf_dir"
+      description: "the absolute path to logstash.conf file."
+      label: "Logstash conf dir"
+      required: true
+      default: "/logstash/conf/"
+      type: "string"

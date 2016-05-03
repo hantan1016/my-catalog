@@ -1,0 +1,40 @@
+elasticsearch:
+  image: elasticsearch:2.3.2
+  ports:
+   - "9200:9200"
+   - "9300:9300"
+  labels:
+    io.rancher.scheduler.affinity:host_label: ${hostlabel_key}=${hostlabel_value}
+    tty: true
+  volumes:
+   - /etc/localtime:/etc/localtime:ro
+  stdin_open: true
+logstash:
+  image: logstash:2.3.2
+  ports:
+   - "5000:5000/tcp"
+   - "5000:5000/udp"
+  labels:
+    io.rancher.scheduler.affinity:host_label: ${hostlabel_key}=${hostlabel_value}
+    tty: true
+  volumes:
+   - /etc/localtime:/etc/localtime:ro
+   - ${logstash_conf_dir}/logstash.conf:/etc/logstash.conf
+  environment:
+    LOGSPOUT: 'ignore'
+  command: logstash -f /etc/logstash.conf
+  links:
+   - elasticsearch:db
+  stdin_open: true
+kibana:
+  image: kibana:4.5.0
+  ports:
+   - "5601:5601"
+  labels:
+    io.rancher.scheduler.affinity:host_label: ${hostlabel_key}=${hostlabel_value}
+    tty: true
+  links:
+   - elasticsearch:elasticsearch
+  volumes:
+   - /etc/localtime:/etc/localtime:ro
+  stdin_open: true

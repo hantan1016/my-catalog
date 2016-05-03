@@ -2,6 +2,8 @@ zabbix-agent:
   image: monitoringartist/zabbix-agent-xxl-limited:latest
   restart: always
   hostname: ${agent_hostname}
+  labels:
+      io.rancher.scheduler.global: 'true'
   ports:
    - 10050:10050
   environment:
