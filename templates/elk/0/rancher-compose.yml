@@ -7,12 +7,12 @@
   uuid: elk-0
   questions:
     - variable: "hostlabel_key"
-      description: "the key of host labels."
+      description: "the key of host labels you will deploy."
       label: "Key"
       required: true
       type: "string"
     - variable: "hostlabel_value"
-      description: "the value of host labels"
+      description: "the value of host labels you will deploy"
       label: "Value"
       required: true
       type: "string"
