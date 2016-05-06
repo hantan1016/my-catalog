@@ -2,4 +2,5 @@ name: Logspout
 description: |
   中文UTF-8显示测试
 version: 1.0.0
-category: 日志
+类型: 日志审计
+支持：[有容云](www.youruncloud.com)
