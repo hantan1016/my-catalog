@@ -1,8 +1,8 @@
-# Add Logspout Stack
+# 添加Logspout栈
 
-Glider Labs Logspout with Logstash adapter
+中文显示测试
 
-### Info:
+### 信息：
 
-For any services launched from the Rancher UI to use Logspout, please make sure to disable the '-t' [tty] option in the Advanced Options of the service definition. 
+中文UTF-8显示测试 
  
