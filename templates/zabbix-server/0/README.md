@@ -1,23 +1,23 @@
 # Zabbix server
 
-### ÉùÃ÷£º
+### å£°æ˜Žï¼š
 
-[ÉîÛÚÊÐÔÆÊæÍøÂç¼¼ÊõÓÐÏÞ¹«Ë¾](http://www.youruncloud.com)¶Ô´ËÄ£°å¡¢´ËÄ£°åÏà¹Ø¾µÏñ¡¢¼°¾µÏñÄÚ±êÊ¶ÓÐÎÒË¾°æÈ¨ÉùÃ÷µÄ½Å±¾ºÍ³ÌÐòÓµÓÐ°æÈ¨£¬ÊÜ·¨ÂÉ±£»¤¡£
+[æ·±åœ³å¸‚äº‘èˆ’ç½‘ç»œæŠ€æœ¯æœ‰é™å…¬å¸](http://www.youruncloud.com)å¯¹æ­¤æ¨¡æ¿ã€æ­¤æ¨¡æ¿ç›¸å…³é•œåƒã€åŠé•œåƒå†…æ ‡è¯†æœ‰æˆ‘å¸ç‰ˆæƒå£°æ˜Žçš„è„šæœ¬å’Œç¨‹åºæ‹¥æœ‰ç‰ˆæƒï¼Œå—æ³•å¾‹ä¿æŠ¤ã€‚
 
-Î´¾­±¾¹«Ë¾ÊéÃæÐí¿É£¬ÈÎºÎµ¥Î»¼°¸öÈË²»µÃÒÔÈÎºÎ·½Ê½»òÀíÓÉ¶ÔÉÏÊö²úÆ·¡¢·þÎñ¡¢ÐÅÏ¢¡¢²ÄÁÏµÄÈÎºÎ²¿·Ö½øÐÐÊ¹ÓÃ¡¢¸´ÖÆ¡¢ÐÞ¸Ä¡¢³­Â¼¡¢´«²¥»òÓëÆäËü²úÆ·À¦°óÊ¹ÓÃ¡¢ÏúÊÛ¡£
+æœªç»æœ¬å…¬å¸ä¹¦é¢è®¸å¯ï¼Œä»»ä½•å•ä½åŠä¸ªäººä¸å¾—ä»¥ä»»ä½•æ–¹å¼æˆ–ç†ç”±å¯¹ä¸Šè¿°äº§å“ã€æœåŠ¡ã€ä¿¡æ¯ã€ææ–™çš„ä»»ä½•éƒ¨åˆ†è¿›è¡Œä½¿ç”¨ã€å¤åˆ¶ã€ä¿®æ”¹ã€æŠ„å½•ã€ä¼ æ’­æˆ–ä¸Žå…¶å®ƒäº§å“æ†ç»‘ä½¿ç”¨ã€é”€å”®ã€‚
 
-·²ÇÖ·¸±¾¹«Ë¾°æÈ¨µÄ£¬±¾¹«Ë¾±ØÒÀ·¨×·¾¿Æä·¨ÂÉÔðÈÎ¡£
+å‡¡ä¾µçŠ¯æœ¬å…¬å¸ç‰ˆæƒçš„ï¼Œæœ¬å…¬å¸å¿…ä¾æ³•è¿½ç©¶å…¶æ³•å¾‹è´£ä»»ã€‚
 
-### ¸ÅÊö£º
+### æ¦‚è¿°ï¼š
 
-´ËÄ£°å½öÓÃÓÚÊÔÓÃ£¬ÈçÐèÔÚÉú²ú»·¾³Ê¹ÓÃ°æ±¾£¬ÇëÁªÏµ[ÓÐÈÝÔÆ](http://www.youruncloud.com)¡£
+æ­¤æ¨¡æ¿ä»…ç”¨äºŽè¯•ç”¨ï¼Œå¦‚éœ€åœ¨ç”Ÿäº§çŽ¯å¢ƒä½¿ç”¨ç‰ˆæœ¬ï¼Œè¯·è”ç³»[æœ‰å®¹äº‘](http://www.youruncloud.com)ã€‚
 
-[¸ÃÄ£°åÊÇÒ»¸öDocker»¯µÄZabbix server£¬¼¯³ÉServer¡¢Java Gateway¡¢Web UI¡¢Agent¡¢MySQLÓÚÒ»Ìå]
+[è¯¥æ¨¡æ¿æ˜¯ä¸€ä¸ªDockeråŒ–çš„Zabbix serverï¼Œé›†æˆServerã€Java Gatewayã€Web UIã€Agentã€MySQLäºŽä¸€ä½“]
 
-### ÅäÖÃ£º
+### é…ç½®ï¼š
 
-Ä¬ÈÏÅäÖÃÈçÏÂ£¬ÅäÖÃÏêÏ¸ÃèÊöÇëµã»÷[´Ë´¦](http://www.youruncloud.com/help/115.html)¡£
+é»˜è®¤é…ç½®å¦‚ä¸‹ï¼Œé…ç½®è¯¦ç»†æè¿°è¯·ç‚¹å‡»[æ­¤å¤„](http://www.youruncloud.com/help/115.html)ã€‚
 
-### Ê¹ÓÃ£º
+### ä½¿ç”¨ï¼š
 
-²¿ÊðÍê³Éºó£¬Çë·ÃÎÊhttp://IPµØÖ·:8082/zabbix¡£Ê¹ÓÃÏêÏ¸ÃèÊöÇëµã»÷[´Ë´¦](http://www.youruncloud.com/help/115.html)¡£
+éƒ¨ç½²å®ŒæˆåŽï¼Œè¯·è®¿é—®http://IPåœ°å€:8082/zabbixã€‚ä½¿ç”¨è¯¦ç»†æè¿°è¯·ç‚¹å‡»[æ­¤å¤„](http://www.youruncloud.com/help/115.html)ã€‚
