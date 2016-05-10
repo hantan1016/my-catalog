@@ -1,5 +1,7 @@
 name: ELK
 description: |
-  Collect, search and visualise log data with ELK (Elasticsearch 2.3.2, Logstash 2.3.2, Kibana 4.5.0).
+  查询，收集日志数据并可视化。
+  ELK(Elasticsearch 2.3.2, Logstash 2.3.2, Kibana 4.5.0)
 version: 1.0.0
-category: ELK
+category: 日志审计
+maintainer: "有容云"

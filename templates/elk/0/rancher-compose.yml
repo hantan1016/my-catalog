@@ -3,7 +3,6 @@
   version: 1.0.0
   description: |
     Collect, search and visualise log data with ELK (Elasticsearch 2.3.2, Logstash 2.3.2, Kibana 4.5.0).
-  minimum_rancher_version: v0.56.0
   uuid: elk-0
   questions:
     - variable: "hostlabel_key"
@@ -12,7 +11,7 @@
       required: true
       type: "string"
     - variable: "hostlabel_value"
-      description: "the value of host labels you will deploy"
+      description: "the value of host labels you will deploy."
       label: "Value"
       required: true
       type: "string"
