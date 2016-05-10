@@ -3,7 +3,6 @@
   version: 1.0.0
   description: |
     Dockerized Zabbix agent with Docker monitoring out of the box for CoreOS, Debian, RHEL, Ubuntu, ....
-  minimum_rancher_version: v0.56.0
   uuid: agent-0
   questions:
     - variable: "agent_hostname"

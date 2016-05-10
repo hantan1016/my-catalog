@@ -1,4 +1,4 @@
-# Add ELK Stack
+# ELK
 
 
 ### 声明：
@@ -13,7 +13,7 @@
 
 此模板仅用于试用，如需在生产环境使用版本，请联系[有容云](http://www.youruncloud.com)。
 
-[模板概述：该模板基于Elasticsearch、Logstash、Kibana，提供一个强大而便捷的日志管理服务系统]
+[该模板基于Elasticsearch、Logstash、Kibana，提供一个强大而便捷的日志管理服务系统]
 
 ### 配置：
 

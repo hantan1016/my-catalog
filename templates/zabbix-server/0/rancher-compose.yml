@@ -3,6 +3,5 @@
   version: 1.0.0
   description: |
     Runs Zabbix Server and Zabbix Web UI on a Container.
-  minimum_rancher_version: v0.56.0
   uuid: zabbixserver-0
   questions:
