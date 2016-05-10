@@ -1,0 +1,46 @@
+.catalog:
+  name: "jboss"
+  version: "7.1.1"
+  description: "JBOSS 7.1.1 with your application deployed"
+  questions:
+    - variable: war_url
+      description: "URL of your application war/ear artifact"
+      label: "Artifact URL"
+      type: "string"
+      required: true
+      default: "http://tomcat.apache.org/tomcat-5.5-doc/appdev/sample/sample.war"
+    - variable: jboss_scale
+      description: "Number of jboss node"
+      label: "Number of jboss nodes"
+      required: true
+      default: 3
+      type: "int"
+    - variable: lb_port
+      description: "load balance port for jboss clusters"
+      label: "Load balance port"
+      type: "int"
+      required: true
+      default: 8092
+    - variable: "host_label" 
+      description: "Please input the host_label for lb" 
+      label: "Host_label"
+      required: true
+      default: "hostname=host1"
+      type: "string"
+
+jbosslb:
+  scale: 1
+  load_balancer_config:
+    lb_cookie_stickiness_policy:
+      cookie: wlscookie
+      domain: ''
+      mode: insert
+    haproxy_config: {}
+  health_check:
+    port: 42
+    interval: 2000
+    unhealthy_threshold: 3
+    healthy_threshold: 2
+    response_timeout: 2000
+jboss:
+  scale: ${jboss_scale}

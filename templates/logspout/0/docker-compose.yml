@@ -8,5 +8,5 @@ logspout:
   labels:
     io.rancher.scheduler.global: 'true'
   tty: true
-  image: gliderlabs/logspout
+  image: 192.168.18.250:5002/appsoar/logspout
   stdin_open: true

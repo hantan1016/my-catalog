@@ -1,5 +1,5 @@
 zabbix-agent:
-  image: monitoringartist/zabbix-agent-xxl-limited:latest
+  image: 192.168.18.250:5002/appsoar/zabbix-agent-xxl-limited:latest
   restart: always
   hostname: ${agent_hostname}
   labels:

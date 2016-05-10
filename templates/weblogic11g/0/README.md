@@ -1,4 +1,4 @@
-# Logspout
+# WebLogic
 
 ### 声明：
 
@@ -12,7 +12,7 @@
 
 此模板仅用于试用，如需在生产环境使用版本，请联系[有容云](http://www.youruncloud.com)。
 
-[该模板基于Glider Labs Logspout，是一个Docker容器日志路由器。它可以路由主机上所有容器的日志到你的日志管理系统(如AppSoar的ELK)]
+[该模板默认创建一个负载均衡和两个WebLogic服务实例集群用于应用部署和数据源配置(当前只支持Oracle)]
 
 ### 配置：
 
@@ -20,9 +20,9 @@
 
 ### 使用：
 
-1.从catalog选择Logspout
+1.从catalog选择WebLogic 11g
 2.输入Configuration Options中必填信息(或使用默认配置)
 3.点击Launch，开始部署
 
-通过AppSoar UI启动的任何服务，请确保禁用'-t'[tty]，否则无法路由该服务(容器)的日志。使用详细描述请点击[此处](http://www.youruncloud.com/help/115.html)。
- 
+部署完成后，请访问 http://your-loadbalance-address:17001/your-app-context，使用详细描述请点击[此处](http://www.youruncloud.com/help/115.html)。
+  

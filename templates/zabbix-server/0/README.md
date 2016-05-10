@@ -20,4 +20,8 @@
 
 ### 使用：
 
+1.从catalog选择Zabbix server
+2.输入Configuration Options中必填信息(或使用默认配置)
+3.点击Launch，开始部署
+
 部署完成后，请访问http://IP地址:8082/zabbix。使用详细描述请点击[此处](http://www.youruncloud.com/help/115.html)。

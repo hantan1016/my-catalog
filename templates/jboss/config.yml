@@ -1,0 +1,6 @@
+name: JBoss
+description: |
+  JBoss AS  7.11 with your application deployed.
+version: 7.1.1
+category: 中间件
+maintainer: "有容云"

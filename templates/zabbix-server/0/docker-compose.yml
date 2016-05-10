@@ -1,5 +1,5 @@
 zabbix-server:
-  image: berngp/docker-zabbix
+  image: 192.168.18.250:5002/appsoar/zabbix-server
   restart: always
   ports:
    - 10051:10051

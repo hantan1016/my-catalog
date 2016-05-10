@@ -1,0 +1,35 @@
+.catalog:
+  name: WebSphere integrates IHS 
+  version: 8.5.5.0
+  description: |
+      WebSphere integrates IHS by Cloudsoar
+  questions:
+    - variable: "wasnodescale"
+      description: "Number of AppSrv node"
+      label: "number of appsrv nodes"
+      required: true
+      default: 2
+      type: "int"
+    - variable: "dmgrhost"
+      description: "The location of the dmgr"
+      label: "the location of the dmgr"
+      required: true
+      default: "hostname=host1"
+      type: "string"
+    - variable: "ihshost"
+      description: "The location of the host"
+      label: "the location of the host"
+      required: true
+      default: "hostname=host1"
+      type: "string"
+
+
+ihs:
+  scale: 1
+
+WasNode:
+  scale: ${wasnodescale}
+
+dmgr:
+  scale: 1
+

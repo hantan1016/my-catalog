@@ -1,0 +1,6 @@
+name: WebLogic11g
+description: |
+  Oracle WebLogic 11g with your application deployed.
+version: 2.6
+category: 中间件
+maintainer: "有容云"

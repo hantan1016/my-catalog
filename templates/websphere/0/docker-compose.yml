@@ -1,0 +1,31 @@
+ihs:
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.scheduler.affinity:host_label: ${ihshost}
+  tty: true
+  image: 192.168.14.42:5000/admin/ihs
+  ports:
+  - 80:80/tcp
+  links:
+  - WasNode:WasNode
+  privileged: true
+  stdin_open: true
+WasNode:
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: 192.168.14.42:5000/admin/wasnode
+  links:
+  - dmgr:dmgr
+  privileged: true
+  stdin_open: true
+dmgr:
+  labels:
+    io.rancher.scheduler.affinity:host_label: ${dmgrhost}
+    io.rancher.container.pull_image: always
+  ports:
+  - 9043:9043/tcp
+  tty: true
+  image: 192.168.14.42:5000/admin/dmgr
+  privileged: true
+  stdin_open: true
