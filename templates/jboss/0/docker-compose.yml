@@ -14,5 +14,5 @@ jboss:
   labels:
     io.rancher.container.pull_image: always
   tty: true
-  image: 192.168.14.42:5000/admin/jboss
+  image: 192.168.18.250:5002/appsoar/jboss
   stdin_open: true
