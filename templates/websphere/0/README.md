@@ -24,5 +24,5 @@
 2.输入Configuration Options中必填信息(或使用默认配置)
 3.点击Launch，开始部署
 
-部署完成后，请访问 http://your-loadbalance-address:17001/your-app-context，使用详细描述请点击[此处](http://www.youruncloud.com/help/115.html)。
+部署完成后，WebSphere IHS集群即可通过Rancher network访问了。使用详细描述请点击[此处](http://www.youruncloud.com/help/115.html)。
 
