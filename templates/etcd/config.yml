@@ -1,0 +1,6 @@
+name: etcd
+description: |
+  This is Appsoar etcd used demo.
+version: latest
+category: appsoar.
+maintainer: "appsoar"

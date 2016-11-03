@@ -1,0 +1,24 @@
+.catalog:
+  name: etcd
+  version: latest
+  description: "etcd"
+  questions:
+   - variable: "ENDPOINT"
+     description: "Please input etcd endpoint."
+     label: "etcd endpoint address."
+     required: true
+     default: "192.168.5.16:2379"
+     type: "string"
+   - variable: "DIR"
+     description: "Please input the etcd dir document."
+     label: "The etcd dir document path."
+     required: true
+     default: "/env/env_file"
+     type: "string"
+
+busybox:
+  scale: 1
+busybox11:
+  scale: 1
+centos:
+  scale: 1

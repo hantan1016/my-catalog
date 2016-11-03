@@ -1,0 +1,39 @@
+busybox:
+  etcd:
+    endpoint: '${ENDPOINT}'
+    dir: '${DIR}'
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.hostname_override: container_name
+    io.rancher.scheduler.affinity:host_label: hostname=host1
+  tty: true
+  log_opt: {}
+  image: ah.youruncloud.com/pub/busybox:latest
+  stdin_open: true
+busybox11:
+  etcd:
+    endpoint: '${ENDPOINT}'
+    dir: '${DIR}'
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.hostname_override: container_name
+    io.rancher.scheduler.affinity:host_label: hostname=host2
+  tty: true
+  log_opt: {}
+  image: ah.youruncloud.com/pub/busybox:v1.1
+  stdin_open: true
+centos:
+  etcd:
+    endpoint: '${ENDPOINT}'
+    dir: '${DIR}'
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.hostname_override: container_name
+    io.rancher.scheduler.affinity:host_label: hostname=host3
+  tty: true
+  log_opt: {}
+  image: ah.youruncloud.com/pub/centos:6.5
+  stdin_open: true

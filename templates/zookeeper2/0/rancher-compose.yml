@@ -1,0 +1,25 @@
+.catalog:
+  name: Zookeeper
+  version: v1.0.0
+  description: |
+    (Experimental) Apache Zookeeper cluster.
+  minimum_rancher_version: v0.59.0
+  maintainer: "Raul Sanchez <rawmind@gmail.com>"
+  uuid: zk-0
+  questions:
+    - variable: "zk_scale"
+      description: "Number of zk nodes. Note: Recommended an odd number"
+      label: "Zk Nodes:"
+      required: true
+      default: 3
+      type: "int"
+zookeeper:
+  scale: ${zk_scale}
+  retain_ip: true
+  health_check:
+    port: 2181
+    interval: 5000
+    unhealthy_threshold: 3
+    request_line: ''
+    healthy_threshold: 2
+    response_timeout: 5000

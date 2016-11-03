@@ -1,0 +1,22 @@
+Nimbus:
+  ports:
+   - ${nimbusport}:8080/tcp
+  environment:
+    startport: ${startport}
+    number: ${number}
+  external_links:
+    - ${zookeeper}:zk
+  tty: true
+  image: 192.168.5.40:5002/pub/storm:1.2
+  stdin_open: true
+  command: ["/storm/start/nimbus.sh"]
+Supervisor:
+  environment:
+    startport: ${startport}
+    number: ${number}
+  external_links:
+    - ${zookeeper}:zk
+  tty: true
+  image: 192.168.5.40:5002/pub/storm:1.2
+  stdin_open: true
+  command: ["/storm/start/nimbus.sh"]
