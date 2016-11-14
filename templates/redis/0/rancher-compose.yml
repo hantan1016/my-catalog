@@ -1,0 +1,39 @@
+.catalog:
+  name: redis
+  version: v1.0.0
+  description: |
+    This is a redis catalog.to use it,you should config the ip address and port.
+  uuid: redis-0
+  questions:
+#   - variable: "redis_scale"
+#      description: "Number of redis nodes. Note: Recommended an odd number"
+#      label: "redis Nodes:"
+#      required: true
+#      default: 2
+#      type: "int"
+#    - variable: "redis_data_dir"
+#      description: "Directory where redis store data"
+#      label: "redis data dir:"
+#      required: true
+#      default: "/data/redis"
+#      type: "string"
+#    - variable: "redis_port"
+#      description: "the port of redis use"
+#      label: "redis port:"
+#      required: true
+#      default: 6379
+#      type: "int"
+slave:
+  scale: 2
+lb:
+  scale: 1
+  load_balancer_config:
+    haproxy_config: {}
+  health_check:
+    port: 42
+    interval: 2000
+    unhealthy_threshold: 3
+    healthy_threshold: 2
+    response_timeout: 2000
+master:
+  scale: 1

@@ -1,0 +1,21 @@
+slave:
+  tty: true
+  image: 192.168.18.250:5002/admin/redis-slave:latest
+  links:
+  - master:master
+  stdin_open: true
+lb:
+  ports:
+  - 6369:6379/tcp
+  tty: true
+  image: rancher/load-balancer-service
+  links:
+  - slave:slave
+  stdin_open: true
+master:
+  ports:
+  - 6389:6379/tcp
+  tty: true
+  image: 192.168.18.250:5002/admin/redis-master:latest
+  stdin_open: true
+

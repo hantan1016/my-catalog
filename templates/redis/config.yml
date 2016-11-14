@@ -1,0 +1,6 @@
+name: redis
+description: |
+  This is a redis catalog.to use it,you should config the ip address and port.
+version: v1.0.0
+category: Clustering
+license: 
