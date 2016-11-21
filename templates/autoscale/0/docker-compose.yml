@@ -1,0 +1,22 @@
+autoscale:
+  environment:
+    URL: ${URL}
+    USER_NAME: ${ACCESS_KEY}
+    KEY: ${SECRET_KEY}
+    STACK_SERVICE_NAME: ${MONITOR_SERVICE}
+    REMAIN_MIN_SIZE: ${REMAIN_MIN_SIZE}
+    CPU_SCALE_UP_PERCENT: '${CPU_SCALE_UP_PERCENT}'
+    MEM_SCALE_UP_VALUE: '${MEMORY_SCALE_UP_VALUE}'
+    CPU_SCALE_DOWN_PERCENT: '${CPU_SCALE_DOWN_PERCENT}'
+    MEM_SCALE_DOWN_VALUE: '${MEMORY_SCALE_DOWN_VALUE}'
+    SCAN_INTERVAL: '${SCAN_INTERVALE}'
+    SCALE_RULE: ${SCALE_RULE}
+    SCALE_MIN_MATCH_TIME: '${SCALE_MIN_MATCH_TIMES}'
+  log_driver: ''
+  tty: true
+  command:
+  - python
+  - /home/autoscale.py
+  log_opt: {}
+  image: appsoar/autoscale:v1.0.0
+  stdin_open: true
